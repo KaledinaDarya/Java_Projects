@@ -24,7 +24,7 @@ public class Zombie extends Enemy {
                 return false;
             } else {
                 flagRevive = true;
-                this.health += 50;
+                this.health = 50;
                 System.out.println("Зомби воскрес!");
                 return true;
             }
