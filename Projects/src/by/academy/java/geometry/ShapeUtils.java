@@ -23,19 +23,12 @@ public class ShapeUtils {
             this.figure = new Rectangle(bottomBase, leftSide);
             System.out.println("Ваша фигура - прямоугольник");
         } else {
-            System.out.println(Math.pow((bottomBase - topBase), 2) + Math.pow(leftSide, 2) - Math.pow(rightSide, 2));
-            System.out.println(2 * (bottomBase - topBase));
-            System.out.println(Math.pow(
-                    ((Math.pow((bottomBase - topBase), 2) + Math.pow(leftSide, 2) - Math.pow(rightSide, 2)) / (
-                            2 * (bottomBase - topBase))), 2
-            ));
             double height = Math.sqrt(
                     Math.pow(leftSide, 2) - Math.pow(
                             ((Math.pow((bottomBase - topBase), 2) + Math.pow(leftSide, 2) - Math.pow(rightSide, 2)) / (
                                     2 * (bottomBase - topBase))), 2
                     )
             );
-            System.out.println(height);
             this.figure = new Trapeze(height, bottomBase, topBase);
             System.out.println("Ваша фигура - трапеция");
         }

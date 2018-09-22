@@ -17,7 +17,7 @@ public class Main {
     private static ShapeUtils getSideOfFigure() {
         Scanner in = new Scanner(System.in);
         System.out.println("Пожалуйста, введите стороны фигуры, а остальные параметры заполните нулями" +
-                "\n(ввод начинаем с радиуса или нижнего основания и едем по часовой стрелке):");
+                "\n(ввод начинаем с радиуса или нижнего основания и дальше по часовой стрелке):");
         double a = in.nextDouble();
         double b = in.nextDouble();
         double c = in.nextDouble();
