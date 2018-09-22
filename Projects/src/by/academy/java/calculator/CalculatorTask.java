@@ -9,22 +9,31 @@ public class CalculatorTask {
 
         BigDecimal bdFirstNumber, bdSecondNumber, bdResult;
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите тип данных, с которыми хотите произвести вычисления: " +
+        System.out.println("Выберите тип первого числа: " +
                 "\n 0 - целые" +
-                "\n любой другой символ - вещественные");
-        int typeOfNumberId = in.nextByte();
-        switch (typeOfNumberId) {
-            case 0:
-                System.out.println("Введите аргументы целого типа через enter:");
-                DataType<Integer> cbInteger = new DataType<Integer>(in.nextInt(), in.nextInt());
-                bdFirstNumber = new BigDecimal(cbInteger.firstNumber);
-                bdSecondNumber = new BigDecimal(cbInteger.secondNumber);
-                break;
-            default:
-                System.out.println("Введите аргументы вещественного типа через enter:");
-                DataType<Double> cdDouble = new DataType<Double>(in.nextDouble(), in.nextDouble());
-                bdFirstNumber = new BigDecimal(cdDouble.firstNumber);
-                bdSecondNumber = new BigDecimal(cdDouble.secondNumber);
+                "\n 1 - вещественные");
+        int typeOfFirstNumberId = in.nextByte();
+        System.out.println("Выберите тип второго числа: " +
+                "\n 0 - целые" +
+                "\n 1 - вещественные");
+        int typeOfSecondNumberId = in.nextByte();
+        System.out.println("Через enter введите оба числа: ");
+        if ((typeOfFirstNumberId == 0) && (typeOfSecondNumberId == 0)) {
+            ClassForGenerics<Integer, Integer> generics = new ClassForGenerics<>(in.nextInt(), in.nextInt());
+            bdFirstNumber = new BigDecimal(generics.getFirstNumber());
+            bdSecondNumber = new BigDecimal(generics.getSecondNumber());
+        } else if ((typeOfFirstNumberId == 1) && (typeOfSecondNumberId == 0)) {
+            ClassForGenerics<Double, Integer> generics = new ClassForGenerics<>(in.nextDouble(), in.nextInt());
+            bdFirstNumber = new BigDecimal(generics.getFirstNumber());
+            bdSecondNumber = new BigDecimal(generics.getSecondNumber());
+        } else if ((typeOfFirstNumberId == 0) && (typeOfSecondNumberId == 1)) {
+            ClassForGenerics<Integer, Double> generics = new ClassForGenerics<>(in.nextInt(), in.nextDouble());
+            bdFirstNumber = new BigDecimal(generics.getFirstNumber());
+            bdSecondNumber = new BigDecimal(generics.getSecondNumber());
+        } else {
+            ClassForGenerics<Double, Double> generics = new ClassForGenerics<>(in.nextDouble(), in.nextDouble());
+            bdFirstNumber = new BigDecimal(generics.getFirstNumber());
+            bdSecondNumber = new BigDecimal(generics.getSecondNumber());
         }
         int actionId = 0;
         do {
@@ -51,8 +60,9 @@ public class CalculatorTask {
                     break;
                 case 4:
                     if (!bdSecondNumber.equals(BigDecimal.ZERO)) {
-                        bdResult = bdFirstNumber.divide(bdSecondNumber);
-                        result = bdFirstNumber + " / " + bdSecondNumber + " = " + bdResult;
+                        bdResult = bdFirstNumber.divide(bdSecondNumber, BigDecimal.ROUND_CEILING);
+                        result = bdFirstNumber + " / " + bdSecondNumber + " " +
+                                "(с окргулением в сторону большего целого) = " + bdResult;
                         break;
                     } else {
                         result = "Ошибка! Деление на ноль.";
