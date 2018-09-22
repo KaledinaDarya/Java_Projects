@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0572fe-ba98-4171-aff0-88b03cbc695f" name="Default Changelist" comment="">
+    <list default="true" id="eb0572fe-ba98-4171-aff0-88b03cbc695f" name="Default Changelist" comment="Lesson 8, GeometryTask">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Projects/by/academy/java/calculator/CalculatorTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projects/by/academy/java/calculator/CalculatorTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Projects/by/academy/java/calculator/DataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projects/by/academy/java/calculator/DataType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Projects/by/academy/java/timetask/TimeBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projects/by/academy/java/timetask/TimeBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/academy/java/calculator/CalculatorTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/academy/java/calculator/CalculatorTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/academy/java/calculator/DataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/academy/java/calculator/DataType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/academy/java/game/BattleGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/academy/java/game/BattleGround.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/academy/java/game/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/academy/java/game/Zombie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/academy/java/timetask/TimeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/academy/java/timetask/TimeBlock.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,6 +71,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="10489" />
+          <entry key="txt" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,6 +82,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="10489" />
+          <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -198,8 +198,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/by/academy/java/geometry/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -296,13 +296,6 @@
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geometry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -313,7 +306,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537613423241" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537613668006" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -422,10 +415,25 @@
       <option name="presentableId" value="Default" />
       <updated>1536779454178</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lesson 8, GeometryTask">
+      <created>1537613568354</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537613568354</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Lesson 8, GeometryTask">
+      <created>1537613623023</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537613623023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -433,11 +441,11 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.32980332" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.18683812" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18683812" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="1" side_tool="true" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
@@ -460,6 +468,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson 8, GeometryTask" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 8, GeometryTask" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/by/academy/java/timetask/TimeAsserts.java" />
     <entry file="file://$PROJECT_DIR$/src/by/academy/java/bank/BankOperations.java" />
@@ -476,6 +488,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -512,6 +530,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,6 +541,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -540,6 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,6 +590,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -575,6 +607,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,8 +738,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/academy/java/geometry/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
